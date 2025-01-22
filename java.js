@@ -42,19 +42,20 @@ window.addEventListener('resize', () => {
     topArray = Array(Math.ceil(canvas.width / 10)).fill(0);
 });
 
-<script>
+let whatsappButton = document.querySelector('.whatsapp-button');
 
-// Detectar el desplazamiento
+// Guardamos la posición anterior del cursor
 let lastScrollY = window.scrollY;
-const whatsappButton = document.querySelector('.whatsapp-button');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > lastScrollY) {
-        // Ocultar el botón al bajar
+        // El usuario está bajando, ocultamos el botón
         whatsappButton.classList.add('hidden');
     } else {
-        // Mostrar el botón al subir
+        // El usuario está subiendo, mostramos el botón
         whatsappButton.classList.remove('hidden');
     }
+    // Actualizamos la posición actual del scroll
     lastScrollY = window.scrollY;
 });
+
