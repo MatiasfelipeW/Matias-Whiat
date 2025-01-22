@@ -1,0 +1,231 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    /* Eliminar overflow hidden */
+    overflow: auto; /* o no incluir overflow para permitir el desplazamiento */
+}
+
+
+/* Header Styles */
+header {
+    background-color: #1e1e2f;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar p {
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #00ff99;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+.services {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 2rem;
+    color: #00ff99;
+    margin-bottom: 1rem;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Call to Action */
+.cta {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+
+.cta h3 {
+    font-size: 2rem;
+    color: #00ff99;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 2rem;  /* Agregar más espacio en la parte inferior */
+    background-color: #1e1e2f;
+    color: #ffffff;
+    position: relative;  /* Esto ayudará a mantenerlo en su lugar */
+    margin-top: 2rem;  /* Espacio adicional encima del footer */
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Estilo para posicionar el traductor y el botón a la derecha */
+/* Estilo para el traductor */
+#google_translate_element {
+    position: fixed;
+    top: 60%; /* Centrado vertical */
+    right: 15px; /* Separación de la derecha */
+    z-index: 9999; /* Asegura que el traductor esté por encima de otros elementos */
+    display: none; /* Ocultar el traductor por defecto */
+}
+
+/* Estilo para el botón de traducción */
+#translate-button {
+    background-color: #00ff99;
+    position: fixed;
+    top: 70%; /* Centrado vertical */
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 9999; /* Asegura que el botón esté por encima de otros elementos */
+    color: rgba(17, 18, 16, 0.934); /* Color del texto blanco */
+    border: none; /* Eliminar borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor en forma de mano */
+}
+
+/* Cambiar color del botón al pasar el cursor */
+#translate-button:hover {
+    background-color: #ffffffd8; /* Color de fondo más oscuro al pasar el cursor */
+}
+
+
+/* Estilo para el formulario de contacto */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(1, 35, 10, 0.1);
+}
+
+/* Títulos y botones */
+.contact-form h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Espaciado y borde de los campos */
+.contact-form .form-control {
+    border-radius: 5px;
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.contact-item {
+    text-align: center;
+    color: #fffcfc; /* Cambia el color si es necesario */
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.contact-item img {
+    width: 60px; /* Ajusta el ancho deseado */
+    height: auto; /* Mantén la proporción de la imagen */
+    display: block; /* Centra la imagen si es necesario */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+
+.contact-item span {
+    margin-top: 5px;
+    display: block;
+    font-size: 12px;
+    color: #ffffff; /* Cambia para mejor contraste */
+}
+
+#contact-heading {
+    text-align: center;
+}
+
+
+
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    
+}
+
+
+.btn:hover {
+    background-color: #00ff99; 
+}
