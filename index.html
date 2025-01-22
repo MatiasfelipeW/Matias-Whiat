@@ -211,5 +211,21 @@
     </div>
 
     <script src="java.js"></script>
+
+    <script>
+        let whatsappButton = document.querySelector('.whatsapp-button');
+    
+        let lastScrollY = window.scrollY;
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                whatsappButton.classList.add('hidden');
+            } else {
+                whatsappButton.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+    
 </body>
 </html>

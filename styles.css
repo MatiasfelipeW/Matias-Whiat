@@ -105,6 +105,30 @@ footer {
 .whatsapp-button {
     position: fixed;
     bottom: 90px;
+    right: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Clase para ocultar el botón */
+.hidden {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+    
+    /* Clase para ocultar el botón */
+    .hidden {
+        transform: translateY(100px); /* Mueve el botón hacia abajo */
+        opacity: 0; /* Hace que el botón sea invisible */
+        pointer-events: none; /* Desactiva la interacción */
+    }
+    
     right: 0px;
     z-index: 1000;
 }
