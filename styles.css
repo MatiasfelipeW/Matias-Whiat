@@ -15,14 +15,14 @@
 
 .preloader-content {
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .preloader-logo {
     width: 150px;
     height: auto;
     margin-bottom: 20px;
-    animation: pulse 1.5s infinite;
+    animation: pulse 4s infinite;
 }
 
 .loading-bar {

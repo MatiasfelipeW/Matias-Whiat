@@ -65,3 +65,13 @@ window.addEventListener('load', function () {
     document.body.classList.add('loaded');
 });
 
+// JavaScript para controlar la duración del preloader
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+  
+    setTimeout(() => {
+      preloader.classList.add("hide"); // Oculta el preloader
+      content.style.display = "block"; // Muestra el contenido principal
+    }, 4000); // Ajusta el tiempo aquí (en milisegundos)
+  });
