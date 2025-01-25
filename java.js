@@ -59,3 +59,9 @@ window.addEventListener('scroll', () => {
     lastScrollY = window.scrollY;
 });
 
+// Wait for the entire page to load before hiding the preloader
+window.addEventListener('load', function () {
+    // Add the 'loaded' class to the body to hide the preloader
+    document.body.classList.add('loaded');
+});
+
