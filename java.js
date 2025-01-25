@@ -75,3 +75,10 @@ window.addEventListener("load", () => {
       content.style.display = "block"; // Muestra el contenido principal
     }, 4000); // Ajusta el tiempo aquí (en milisegundos)
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Retrasar la eliminación del preloader por 4 segundos
+    setTimeout(() => {
+        document.body.classList.add("loaded");
+    }, 4000); // 4000 ms = 4 segundos
+});
