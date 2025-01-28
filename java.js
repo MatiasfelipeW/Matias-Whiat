@@ -73,5 +73,5 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       preloader.classList.add("hide"); // Oculta el preloader
       content.style.display = "block"; // Muestra el contenido principal
-    }, 000); // Ajusta el tiempo aquí (en milisegundos)
+    }, 5000); // Ajusta el tiempo aquí (en milisegundos)
   });
