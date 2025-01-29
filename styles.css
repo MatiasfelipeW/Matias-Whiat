@@ -73,7 +73,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #0a0a0a00;
     /* Eliminar overflow hidden */
     overflow: auto; /* o no incluir overflow para permitir el desplazamiento */
 }
