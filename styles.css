@@ -51,7 +51,7 @@
 
 @keyframes loadingAnimation {
     0% { width: 20px; }
-    50% { width: 100px; }
+    50% { width: 500px; } /* Aumenta el ancho máximo */
     100% { width: 20px; }
 }
 
