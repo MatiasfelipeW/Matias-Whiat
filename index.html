@@ -7,6 +7,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Vinculamos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -72,16 +74,71 @@
 
         </section>
 
-        <section id="services" class="services">
-            <h3>Nuestra Experiencia</h3>
-            <ul>
-                <li>Full-Stack Development</li>
-                <li>Blockchain Implementation</li>
-                <li>Enterprise Solutions</li>
-                <li>Custom Programming</li>
+        <style>
+            .services ul {
+                list-style: none;
+                padding: 0;
+            }
+            .services li {
+                cursor: pointer;
+                padding: 10px;
+                margin: 5px 0;
+                background: #222;
+                color: #0f0;
+                border-radius: 5px;
+                transition: all 0.3s ease-in-out;
+            }
+            .services li:hover {
+                background: #0f0;
+                color: #222;
+            }
+            .service-detail {
+                display: none;
+                background: #111;
+                padding: 15px;
+                color: #0f0;
+                border-left: 3px solid #0f0;
+                margin-top: 10px;
+                animation: fadeIn 0.5s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+    </head>
+    <body class="bg-dark text-light">
+        <section id="services" class="services container py-5">
+            <h3 class="text-center text-warning">Nuestra Experiencia</h3>
+            <ul class="mt-4">
+                <li data-service="fullstack">Full-Stack Development</li>
+                <li data-service="blockchain">Blockchain Implementation</li>
+                <li data-service="enterprise">Enterprise Solutions</li>
+                <li data-service="custom">Custom Programming</li>
             </ul>
+            <div id="service-info" class="service-detail"></div>
         </section>
         
+        <script>
+            $(document).ready(function() {
+                const serviceDescriptions = {
+                    fullstack: "Ofrecemos desarrollo fullstack con tecnologías modernas y escalables para crear aplicaciones web completas, desde el diseño de la interfaz hasta la implementación del backend. Nos especializamos en construir sitios web dinámicos, plataformas interactivas y sistemas personalizados, adaptándonos a las necesidades de tu negocio.",
+                   
+                    blockchain: "ILa tecnología Blockchain ha revolucionado la forma en que se gestionan los datos y las transacciones digitales, ofreciendo seguridad, transparencia y descentralización. Su estructura basada en bloques encadenados permite registrar información de manera inmutable, eliminando la necesidad de intermediarios y reduciendo el riesgo de fraudes. Desde criptomonedas y contratos inteligentes hasta identidad digital y logística, Blockchain se ha convertido en una herramienta clave para diversos sectores, brindando soluciones innovadoras y confiables en un mundo cada vez más digitalizado.",
+                   
+                    enterprise: "Desarrollo de software a la medida para grandes empresas, integración con sistemas ERP y CRM, asegurando escalabilidad y alta disponibilidad.",
+                   
+                    custom: "Programación personalizada adaptada a necesidades específicas, optimización de código, automatización de procesos y desarrollo de APIs avanzadas."
+                };
+    
+                $(".services li").click(function() {
+                    let serviceKey = $(this).data("service");
+                    let description = serviceDescriptions[serviceKey];
+                    
+                    $("#service-info").hide().html(description).fadeIn(500);
+                });
+            });
+        </script> 
 
         <section class="cta">
             <h3>¡Unete Hoy!</h3>
