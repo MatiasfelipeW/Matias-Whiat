@@ -85,3 +85,21 @@ window.addEventListener("load", () => {
         }, 1000);
     }, 5000); // 5 segundos
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".teleport-button").forEach(button => {
+        button.addEventListener("click", function (event) {
+            let url = this.getAttribute("data-url");
+            let smoke = document.createElement("div");
+
+            smoke.classList.add("smoke");
+            smoke.style.left = `${event.clientX - 75}px`;
+            smoke.style.top = `${event.clientY - 75}px`;
+            document.body.appendChild(smoke);
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 600);
+        });
+    });
+});
