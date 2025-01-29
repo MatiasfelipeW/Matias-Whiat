@@ -75,3 +75,13 @@ window.addEventListener("load", () => {
       content.style.display = "block"; // Muestra el contenido principal
     }, 5000); // Ajusta el tiempo aquí (en milisegundos)
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        let preloader = document.getElementById("preloader");
+        preloader.classList.add("hidden");
+        setTimeout(() => {
+            preloader.style.display = "none"; // Ocultar completamente después de la animación
+        }, 1000);
+    }, 5000); // 5 segundos
+});
