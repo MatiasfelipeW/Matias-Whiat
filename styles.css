@@ -9,13 +9,13 @@
 .navbar {
     animation: navColorChange 2s infinite alternate; 
     transition: background-color 3.5s ease-in-out;
-    border-bottom: 3px solid #00ff99;; /* Borde inferior para darle más estilo */
+    border-bottom: 3px solid #0f0;;; /* Borde inferior para darle más estilo */
 }
 
 .navbar-brand, .nav-link {
     color: rgb(0, 0, 0) !important;
     font-weight: bold;
-    text-shadow: 0px 0px 8px #00ff99; /* Brillo tipo Matrix */
+    text-shadow: 0px 0px 8px #0f0; /* Brillo tipo Matrix */
 }
 
 .navbar-toggler-icon {
@@ -107,7 +107,7 @@ header {
 
 .hero h2 {
     font-size: 2.5rem;
-    color: #00ff99;
+    color: #0f0;;
     margin-bottom: 1rem;
 }
 
@@ -124,7 +124,7 @@ header {
 
 .services h3 {
     font-size: 2rem;
-    color: #00ff99;
+    color: #0f0;;
     margin-bottom: 1rem;
 }
 
@@ -147,7 +147,7 @@ header {
 
 .cta h3 {
     font-size: 2rem;
-    color: #00ff99;
+    color: #0f0;
     margin-bottom: 1rem;
 }
 
@@ -215,7 +215,7 @@ footer {
 
 /* Estilo para el botón de traducción */
 #translate-button {
-    background-color: #00ff99;
+    background-color: #0f0;
     position: fixed;
     top: 70%; /* Centrado vertical */
     right: 0;
@@ -316,5 +316,5 @@ footer {
 
 
 .btn:hover {
-    background-color: #00ff99; 
+    background-color: #0f0;
 }
