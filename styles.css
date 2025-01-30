@@ -9,7 +9,6 @@
 .navbar {
     animation: navColorChange 2s infinite alternate; 
     transition: background-color 3.5s ease-in-out;
-    border-bottom: 3px solid #0f0;;; /* Borde inferior para darle más estilo */
 }
 
 .navbar-brand, .nav-link {
