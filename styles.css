@@ -11,10 +11,38 @@
     transition: background-color 4.5s ease-in-out;
 }
 
-.navbar-brand, .nav-link {
-    color: rgb(0, 0, 0) !important;
-    font-weight: bold;  
+.navbar {
+    padding: 10px 15px; /* Agrega espacio alrededor del navbar */
+    margin: 0 auto; /* Centra el navbar */
+    width: 100%;
+    max-width: 1200px; /* Evita que se estire demasiado en pantallas grandes */
 }
+
+.navbar-brand, .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 15px; /* Evita que se peguen a los bordes */
+}
+
+.navbar-toggler {
+    border: none; /* Evita que el botón hamburguesa tenga bordes molestos */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 10px; /* Reduce el padding en móviles */
+    }
+
+    .navbar-brand {
+        font-size: 18px; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Hace que los enlaces sean más legibles */
+        text-align: center; /* Centra los textos en pantallas pequeñas */
+    }
+}
+
 
 .navbar-toggler-icon {
     filter: invert(1);
