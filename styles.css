@@ -8,7 +8,7 @@
 
 .navbar {
     animation: navColorChange 2s infinite alternate; 
-    transition: background-color 3.5s ease-in-out;
+    transition: background-color 4.5s ease-in-out;
 }
 
 .navbar-brand, .nav-link {
